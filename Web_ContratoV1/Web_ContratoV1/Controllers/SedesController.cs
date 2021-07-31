@@ -22,7 +22,7 @@ namespace Web_ContratoV1.Controllers
         // GET: Sedes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.TBT_SEDES.ToListAsync());
+            return View(await _context.TBT_SEDES.ToListAsync()); 
         }
 
         // GET: Sedes/Details/5
