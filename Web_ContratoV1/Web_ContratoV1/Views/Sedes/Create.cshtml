@@ -1,0 +1,38 @@
+﻿@model Web_ContratoV1.Entidades.TBT_SEDES
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TBT_SEDES</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="COD_SEDES" class="control-label"></label>
+                <input asp-for="COD_SEDES" class="form-control" />
+                <span asp-validation-for="COD_SEDES" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DES_SEDES" class="control-label"></label>
+                <input asp-for="DES_SEDES" class="form-control" />
+                <span asp-validation-for="DES_SEDES" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

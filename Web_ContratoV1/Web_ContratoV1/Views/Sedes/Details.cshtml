@@ -1,0 +1,30 @@
+﻿@model Web_ContratoV1.Entidades.TBT_SEDES
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TBT_SEDES</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.COD_SEDES)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.COD_SEDES)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DES_SEDES)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DES_SEDES)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IDD_SEDES">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
